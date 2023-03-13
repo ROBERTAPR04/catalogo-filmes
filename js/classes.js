@@ -55,7 +55,13 @@ class Filme {
         card.appendChild(cardBody);
         cardBody.appendChild(hCardTitle);
         cardBody.appendChild(divDetalhes);
-            return card;
+           
+        let btnDetalhes = document.createElement('button');
+        btnDetalhes.appendChild(document.createTextNode("Detalhes"));
+        btnDetalhes.setAttribute("id", "btn-detalhes");
+        cardBody.appendChild(btnDetalhes);
+
+        return card;
         }
 }
 

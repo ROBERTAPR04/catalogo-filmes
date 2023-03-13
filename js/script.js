@@ -50,7 +50,7 @@ let btnBuscarFilme= document.querySelector("#btn-buscar-filme");
                       null,
                       null,
                       null,
-                      null
+                      null,
                   );
                   filmes.push(filme);
                   
@@ -62,3 +62,11 @@ let btnBuscarFilme= document.querySelector("#btn-buscar-filme");
     }
     return false;
   }
+ 
+  let btnDetalhes= document.querySelectorAll("#btnDetalhes");
+  btnDetalhes.forEach(item=>{
+    item.addEventListener("click", () = {this.id})
+  })
+  btnDetalhes.setAttributc("id",this.id);
+  btnDetalhes.setAttributc("class","btnDetalhesFilme");
+  addEventListener()
