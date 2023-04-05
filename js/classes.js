@@ -125,6 +125,21 @@ class Filme {
         btnSalvar.setAttribute("style", "margin-top:3rem;");
         cardBodyDetalhes.appendChild(btnSalvar);
 
+        const btnExcluir = document.createElement('button');
+        btnExcluir.appendChild(document.createTextNode('Excluir'));
+        btnExcluir.setAttribute("id","btnExcluir");
+        btnExcluir.setAttribute("class","btn btn-danger btn-sm");
+        btnExcluir.setAttribute("style","margin-top: 2rem; margin-left: 1rem;");
+        cardBodyDetalhes.appendChild(btnExcluir);
+
+        const btnEditar = document.createElement('button');
+        btnEditar.appendChild(document.createTextNode('Editar'));
+        btnEditar.setAttribute("id","btnEditar");
+        btnEditar.setAttribute("class","btn btn-success btn-sm");
+        btnEditar.setAttribute("style","margin-top: 2rem; margin-left: 1rem;");
+        cardBodyDetalhes.appendChild(btnEditar);
+
+
         const btnFechar =document.createElement('button');
         btnFechar.setAttribute("id", "btnFechar");
         btnFechar.setAttribute("style", "position:absolute; top:18vh; right:10vw;");
@@ -133,8 +148,27 @@ class Filme {
         btnFechar.setAttribute("aria-label", "Close")
         cardBodyDetalhes.appendChild(btnFechar);
         return cardDetalhes;
+    }  
+    
+    getForms = () =>{
+        const forms = Document.createElement("form");
+        const divAno = document.createElement("div");
+        const divGenero = document.createElement("div");
+        const divDuracao = document.createElement("div");
+        const divDirecao = document.createElement("div");
+        const divElenco = document.createElement("div");
+        const divAvaliacao = document.createElement("div");
+        const divSinopse = document.createElement("div");
+        const labelDetalhes = document.createElement("label");
+        const labelAno = document.createElement("label");
+        const labelGenero = document.createElement("label");
+        const labelDuracao = document.createElement("label");
+        const labelDirecao = document.createElement("label");
+        const labelElenco = document.createElement("label");
+        const labelAvaliacao = document.createElement("label");
+        const labelSinopse = document.createElement("div");
+        
     }   
 }
         
         
-
